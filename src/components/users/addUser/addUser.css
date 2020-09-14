@@ -1,0 +1,10 @@
+.addUserWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.addUserButton {
+  margin-top: 1rem !important;
+  align-self: flex-end;
+}

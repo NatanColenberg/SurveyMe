@@ -1,0 +1,13 @@
+.userRowWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.userRowRemoveIcon {
+  cursor: pointer;
+}
+
+.userRowRemoveIcon:hover {
+  color: rgb(151, 0, 0);
+}

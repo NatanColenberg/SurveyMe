@@ -1,0 +1,11 @@
+.logoSurvey {
+    color: white;
+    font-weight: 300;
+    text-decoration: underline red;
+}
+
+.logoMe {
+    color: #EEE;
+    font-weight: bold;
+    text-shadow: 2px 2px 3px black;
+}
