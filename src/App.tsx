@@ -2,6 +2,7 @@ import React from "react";
 
 import Header from "./components/header/header";
 import Users from "./components/users/Users";
+import Survey from "./components/survey/survey";
 
 import "./App.css";
 
@@ -20,7 +21,7 @@ function App() {
 
       {/* Survey */}
       <div id="survey" className="section">
-        Survey
+        <Survey />
       </div>
 
       {/* Results */}

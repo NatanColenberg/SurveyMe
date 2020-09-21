@@ -1,0 +1,25 @@
+.answersWrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.answerWrap {
+    display: flex;
+    align-items: flex-end;
+    /* justify-content: space-between; */
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.answerIndex {
+    font-size: larger;
+    margin-right: 1rem;
+    flex-shrink: 0;
+    /* flex: 1; */
+}
+
+.answerField {
+    /* flex: 10; */
+    width: 100%;
+}
