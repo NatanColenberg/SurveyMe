@@ -1,0 +1,22 @@
+.questionRowWrap {
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.questionRowWrap:hover {
+    /* background-color: brown; */
+    /* border: 2px solid black; */
+}
+
+.questionRowText {
+    font-size: large;
+}
+
+.questionWrapAnswers {
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+.questionRowAnswer {
+    margin-top: 0.5rem;
+}

@@ -12,6 +12,10 @@
     width: 100%;
 }
 
+.newAnswerWrap {
+    margin-top: 0.5rem;
+}
+
 .answerIndex {
     font-size: larger;
     margin-right: 1rem;

@@ -61,7 +61,7 @@ export default function Answers(props: Props) {
       })}
 
       {/* New Answer */}
-      <div className="answerWrap">
+      <div className="answerWrap newAnswerWrap">
         {/* Index */}
         <div className="answerIndex">{props.answers.length + 1} .</div>
 

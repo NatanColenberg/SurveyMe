@@ -22,11 +22,16 @@ export default function AddUser(props: Props) {
     setEmail("");
   };
 
+  const isValidEmail = (email: string): boolean => {
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    const isValid = re.test(String(email).toLowerCase());
+    return isValid;
+  };
+
   const validateEmail = (email: string): Boolean => {
     if (email === "") return true;
 
-    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    const isValid = re.test(String(email).toLowerCase());
+    const isValid = isValidEmail(email);
 
     if (isValid === false) {
       setEmailError(true);
@@ -59,7 +64,7 @@ export default function AddUser(props: Props) {
           setEmail(e.target.value);
         }}
         onKeyDown={(e) => {
-          if (e.key === "Enter") {
+          if (e.key === "Enter" && validateEmail(email)) {
             addEmail(email);
           }
         }}
@@ -77,6 +82,7 @@ export default function AddUser(props: Props) {
         variant="contained"
         color="primary"
         onClick={() => addEmail(email)}
+        disabled={!isValidEmail(email)}
       >
         Add
       </Button>
