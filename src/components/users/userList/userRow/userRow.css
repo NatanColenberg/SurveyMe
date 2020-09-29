@@ -4,10 +4,29 @@
   justify-content: space-between;
 }
 
-.userRowRemoveIcon {
+.userRowText {
+  display: flex;
+  align-items: center;
+}
+
+.userDeletedHover {
+  text-decoration: line-through;
+  text-decoration-color: rgb(151, 0, 0);
+}
+
+.userEditHover {
+  text-decoration: underline;
+  text-decoration-color: rgb(0, 3, 151);
+}
+
+.userRowIcon {
   cursor: pointer;
 }
 
 .userRowRemoveIcon:hover {
   color: rgb(151, 0, 0);
+}
+
+.userRowEditIcon:hover {
+  color: rgb(0, 3, 151);
 }

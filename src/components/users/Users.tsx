@@ -8,6 +8,7 @@ export default function Users() {
   const [emails, setEmails] = useState<string[]>([
     "natan.colenberg@gmail.com",
     "john.due@gmail.com",
+    "thisisaverylongemailadress@gmail.com",
   ]);
 
   // *** Methods ***
